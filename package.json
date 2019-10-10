@@ -1,0 +1,9 @@
+{
+  "name": "tdd-project",
+  "version": "1.0.0",
+  "description": "A simple tdd example with nodejs",
+  "main": "./src/index.js",
+  "repository": "https://github.com/messiasGeovani/nodejs-tdd-project.git",
+  "author": "messiasGeovani <messias.geovani.lima@gmail.com>",
+  "license": "MIT"
+}
