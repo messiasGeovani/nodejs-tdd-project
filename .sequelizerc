@@ -11,5 +11,5 @@ module.exports = {
     // setting the destination of the seeders directory
     'seeders-path': path.resolve('src', 'database', 'seeders'),
     // setting the destination of the migrations directory
-    'models-path': path.resolve('src', 'database', 'migrations'),
+    'models-path': path.resolve('src', 'database', 'migrations')
 }
