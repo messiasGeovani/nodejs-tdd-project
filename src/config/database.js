@@ -2,10 +2,10 @@
  * Database config object
  */
 module.exports = {
-  host: '127.0.0.1',
-  username: 'ddocker',
-  password: 'docker',
-  database: 'nodeath',
+  username: 'geovani',  
+  password: '1234',  
+  database: 'nodeauth',  
+  host: '127.0.0.1',  
   dialect: 'postgres',
   operatorsAliases: false,
   logging: false,
