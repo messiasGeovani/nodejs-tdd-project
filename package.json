@@ -6,12 +6,17 @@
   "repository": "https://github.com/messiasGeovani/nodejs-tdd-project.git",
   "author": "messiasGeovani <messias.geovani.lima@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore __tests__"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "pg": "^7.12.1",
     "sequelize": "^5.19.5"
   },
   "devDependencies": {
+    "nodemon": "^1.19.3",
     "sequelize-cli": "^5.5.1"
   }
 }
