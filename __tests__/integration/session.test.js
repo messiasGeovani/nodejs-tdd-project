@@ -5,11 +5,19 @@ const request = require('supertest')
 const app = require('../../src/app')
 // user model import
 const { User } = require('../../src/app/models/')
+// truncate database module
+const truncate = require('../utils/truncate')
 
 /**
  * Authentication test group
  */
 describe('Authentication', () => {
+
+    // function that runs before each test
+    beforeEach(async () => {
+        await truncate()
+    })
+
     // teste description
     it('should authenticate with valid credentials', async () => {
         // creating user

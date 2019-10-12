@@ -7,7 +7,7 @@ const SessionController = require('./app/controllers/SessionController')
 /**
  * Creating the routes
  */
-routes.post('/session', SessionController.store)
+routes.post('/sessions', SessionController.store)
 
 
 /**
