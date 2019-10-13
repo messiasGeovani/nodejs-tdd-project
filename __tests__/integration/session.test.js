@@ -38,4 +38,24 @@ describe('Authentication', () => {
         // expected result
         expect(response.status).toBe(200)
     })
+
+    it('should not authenticate with invalid credentials', async () => {
+        // creating user
+        const user = await User.create({
+            name: 'Messias',
+            email: 'messias@email.com',
+            password: '123123'
+        })
+
+        // requesting the session app route
+        const response = await request(app)
+            .post('/sessions')
+            .send({
+                email: user.email,
+                password: '123456'
+            })
+
+        // expected result
+        expect(response.status).toBe(401)
+    })
 })
