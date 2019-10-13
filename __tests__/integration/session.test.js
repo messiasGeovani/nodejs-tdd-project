@@ -3,8 +3,8 @@ const request = require('supertest')
 
 // application import
 const app = require('../../src/app')
-// user model import
-const { User } = require('../../src/app/models/')
+// factory snnipets code module import
+const factory = require('../factories')
 // truncate database module
 const truncate = require('../utils/truncate')
 
@@ -21,9 +21,7 @@ describe('Authentication', () => {
     // teste description
     it('should authenticate with valid credentials', async () => {
         // creating user
-        const user = await User.create({
-            name: 'Messias',
-            email: 'messias@email.com',
+        const user = await factory.create('User', {
             password: '123123'
         })
 
@@ -41,9 +39,7 @@ describe('Authentication', () => {
 
     it('should not authenticate with invalid credentials', async () => {
         // creating user
-        const user = await User.create({
-            name: 'Messias',
-            email: 'messias@email.com',
+        const user = await factory.create('User', {
             password: '123123'
         })
 
@@ -61,9 +57,7 @@ describe('Authentication', () => {
 
     it('should return jwt token authenticated', async () => {
         // creating user
-        const user = await User.create({
-            name: 'Messias',
-            email: 'messias@email.com',
+        const user = await factory.create('User', {
             password: '123123'
         })
 
