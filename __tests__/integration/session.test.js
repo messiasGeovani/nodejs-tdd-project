@@ -25,6 +25,7 @@ describe('Authentication', () => {
             password: '123123'
         })
 
+
         // requesting the session app route
         const response = await request(app)
             .post('/sessions')
