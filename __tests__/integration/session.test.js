@@ -24,7 +24,7 @@ describe('Authentication', () => {
         const user = await User.create({
             name: 'Messias',
             email: 'messias@email.com',
-            password_hash: '123123'
+            password: '123123'
         })
 
         // requesting the session app route
