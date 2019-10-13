@@ -2,10 +2,12 @@
  * Importing modules
  */
 const routes = require('express').Router()
+const SessionController = require('./app/controllers/SessionController')
 
 /**
- * Setting the routes
+ * Creating the routes
  */
+routes.post('/sessions', SessionController.store)
 
 
 /**
