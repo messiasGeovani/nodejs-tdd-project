@@ -73,4 +73,50 @@ describe('Authentication', () => {
         // expected result
         expect(response.body).toHaveProperty('token')
     })
+
+    it('should be able to access private routes when authenticated', async () => {
+        // creating user
+        const user = await factory.create('User', {
+            password: '123123'
+        })
+
+        // requesting the session app route
+        const response = await request(app)
+            .get('/dashboard')
+            // setting the token to allow access
+            .set('Authorization', `Bearer ${user.generateToken()}`)
+
+        // expected result
+        expect(response.status).toBe(200)
+    })
+
+    it('should not be able to access private routes without jwt token', async () => {
+        // creating user
+        const user = await factory.create('User', {
+            password: '123123'
+        })
+
+        // requesting the session app route
+        const response = await request(app)
+            .get('/dashboard')
+
+        // expected result
+        expect(response.status).toBe(401)
+    })
+
+    it('should not be able to access private routes with invalid jwt token', async () => {
+        // creating user
+        const user = await factory.create('User', {
+            password: '123123'
+        })
+
+        // requesting the session app route
+        const response = await request(app)
+            .get('/dashboard')
+            // setting the token to allow access
+            .set('Authorization', `Bearer 123123`)
+
+        // expected result
+        expect(response.status).toBe(401)
+    })
 })
