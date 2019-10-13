@@ -12,4 +12,4 @@ module.exports = {
     'seeders-path': path.resolve('src', 'database', 'seeders'),
     // setting the destination of the migrations directory
     'migrations-path': path.resolve('src', 'database', 'migrations')
-};
+}
