@@ -25,7 +25,7 @@ The project contains the current routes:
 
 | Method | Uri        | Functionality                                  | Content-Type |
 |--------|------------|------------------------------------------------|--------------|
-| POST   | /sessions  | used to add a new [user](src/app/controllers/SessionController) data.                   | json         |
+| POST   | /sessions  | used to add a new [user](src/app/controllers/SessionController.js) data.                   | json         |
 | GET    | /dashboard | redirect the authenticated user to the dashboard. | none         |
 
 - ### Authentication
