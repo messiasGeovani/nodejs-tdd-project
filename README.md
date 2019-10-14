@@ -41,7 +41,7 @@ For project database migrations information, see the [migrations](src/database/m
 This project was created using the [express framework](https://expressjs.com/) to create the server routes and middlewares:
 
 ```bash
-├── src
+└── src
     ├── app
     │   ├── controller
     |   │   └── SessionController.js
