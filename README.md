@@ -95,9 +95,11 @@ The PostgreSQL Data Base Management System was used to store the application dat
 
 ## Meta
 
-Linkedin Profile – [Messias Geovani](https://www.linkedin.com/in/messias-geovani-00125416a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGnSoFwiETD%2BtGrv4dF9mSw%3D%3D) / email – messias.geovani.lima@gmail.com
+Linkedin Profile – [Messias Geovani](https://www.linkedin.com/in/messias-geovani-00125416a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGnSoFwiETD%2BtGrv4dF9mSw%3D%3D) 
 
-[https://github.com/messiasGeovani](https://github.com/messiasGeovani)
+Email – messias.geovani.lima@gmail.com
+
+Github profile – [messiasGeovani](https://github.com/messiasGeovani)
 
 ## Contributing
 
