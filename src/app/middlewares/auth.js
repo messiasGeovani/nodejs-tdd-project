@@ -6,7 +6,7 @@ const { promisify } = require('util')
 /**
  * Authentication middleware
  */
-module.exports = async (req, res, next) => {
+exports.authMiddleware = async (req, res, next) => {
     // getting the token
     const authHeader = req.headers.authorization
 

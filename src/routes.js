@@ -4,9 +4,9 @@
 const routes = require('express').Router()
 
 // authentication middleware
-const authMiddleware = require('./app/middlewares/auth')
+const authMiddleware = require('./app/middlewares/auth').authMiddleware
 
-const SessionController = require('./app/controllers/SessionController')
+const SessionController = require('./app/controllers/SessionController').SessionController
 
 /**
  * Creating the routes
@@ -23,4 +23,4 @@ routes.get('/dashboard', (req, res) => {
 /**
  * Exporting the routes
  */
-module.exports = routes
+exports.Routes = routes

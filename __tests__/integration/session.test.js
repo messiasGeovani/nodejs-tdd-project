@@ -2,11 +2,11 @@
 const request = require('supertest')
 
 // application import
-const app = require('../../src/app')
+const app = require('../../src/app').AppController
 // factory snnipets code module import
-const factory = require('../factories')
+const factory = require('../factories').Factories
 // truncate database module
-const truncate = require('../utils/truncate')
+const truncate = require('../utils/truncate').Truncate
 
 /**
  * Authentication test group
@@ -15,7 +15,7 @@ describe('Authentication', () => {
 
     // function that runs before each test
     beforeEach(async () => {
-        await truncate()
+        await new truncate()
     })
 
     // teste description

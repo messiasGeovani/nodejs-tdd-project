@@ -15,4 +15,4 @@ factory.define('User', User, {
     password: faker.internet.password()
 })
 
-module.exports = factory
+exports.Factories = factory

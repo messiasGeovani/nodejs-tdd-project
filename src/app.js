@@ -34,9 +34,10 @@ class AppController {
 
     routes() {
         // routes config
-        this.express.use(require('./routes'))
+        const routes = require('./routes').Routes
+        this.express.use(routes)
     }
 }
 
 // exporting the object
-module.exports = new AppController().express
+exports.AppController = new AppController().express
