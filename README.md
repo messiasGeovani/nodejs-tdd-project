@@ -91,4 +91,18 @@ For database settings, the [sequelize ORM](https://sequelize.org/) was used in t
 
 The PostgreSQL Data Base Management System was used to store the application data:
 
+<img src="docs/TDD-DATABASE-SCHEMA.png">
 
+## Meta
+
+Linkedin Profile – [Messias Geovani](https://www.linkedin.com/in/messias-geovani-00125416a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGnSoFwiETD%2BtGrv4dF9mSw%3D%3D) / email – messias.geovani.lima@gmail.com
+
+[https://github.com/messiasGeovani](https://github.com/messiasGeovani)
+
+## Contributing
+
+1. Fork it (<https://github.com/messiasGeovani/nodejs-tdd-project/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
