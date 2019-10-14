@@ -36,7 +36,7 @@ The [authentication](src/app/middlewares/auth.js) is used to set the user token 
 
 For project database migrations information, see the [migrations](src/database/migrations) directory.
 
-- ### Project estructure
+## Project estructure
 
 This project was created using the [express framework](https://expressjs.com/) to create the server routes and middlewares:
 
@@ -86,3 +86,9 @@ For database settings, the [sequelize ORM](https://sequelize.org/) was used in t
 └── .sequelizerc
 
 ```
+
+## Project database
+
+The PostgreSQL Data Base Management System was used to store the application data:
+
+
