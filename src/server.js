@@ -1,7 +1,7 @@
 /**
  * Importing modules
  */
-const app = require('./app')
+const app = require('./app').AppController
 
 /**
  * Setting the application server port

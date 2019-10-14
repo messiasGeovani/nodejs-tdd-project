@@ -4,7 +4,7 @@ const { User } = require('../models')
 /**
  * Session controller object
  */
-class SessionController {
+exports.SessionController = new class {
     async store(req, res) {
         // getting the body params
         const { email, password } = req.body
@@ -22,7 +22,7 @@ class SessionController {
         // Checking the password
         if (!(await user.checkPassword(password))) {
             return res.status(401).json({
-                message: 'Inválid password'
+                message: 'Invalid password'
             })
         }
 
@@ -32,5 +32,3 @@ class SessionController {
         })
     }
 }
-
-module.exports = new SessionController()
