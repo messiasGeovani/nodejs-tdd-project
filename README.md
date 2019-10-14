@@ -11,7 +11,7 @@ To install and config the project dependencies, is recommended the [yarn](https:
 yarn install
 ```
 
-However, you also can use [npm](npmjs.com/get-npm).
+However, you also can use [npm](https://www.npmjs.com/get-npm).
 
 ```sh
 npm install
