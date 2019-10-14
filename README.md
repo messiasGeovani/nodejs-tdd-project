@@ -45,8 +45,8 @@ This project was created using the [express framework](https://expressjs.com/) t
     ├── app
     │   ├── controller
     |   │   └── SessionController.js
-    │   ├── middlewares
-    |   │   └── auth.js
+    │   └── middlewares
+    |       └── auth.js
     ├── app.js
     ├── routes.js
     └── server.js
@@ -64,7 +64,7 @@ To make the application tests, it was used the [jest framework](https://jestjs.i
 |   ├── utils
 |   |   └── truncate.js
 |   ├── database.sqlite
-|   ├── factories.js
+|   └── factories.js
 └──jest.config.js
 ```
 
