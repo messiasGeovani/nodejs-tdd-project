@@ -8,8 +8,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/server.js",
+    "predev": "yarn sequelize db:create && yarn sequelize db:migrate",
     "dev": "nodemon src/server.js --ignore __tests__",
-    "pretest": "NODE_ENV=test sequelize db:migrate",
+    "pretest": "NODE_ENV=test sequelize yarn sequelize db:create && yarn sequelize db:migrate",
     "test": "NODE_ENV=test jest",
     "posttest": "NODE_ENV=test sequelize db:migrate:undo:all"
   },
@@ -20,6 +21,7 @@
     "factory-girl": "^5.0.4",
     "faker": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
+    "mysql2": "^1.7.0",
     "pg": "^7.12.1",
     "sequelize": "^5.19.5"
   },
